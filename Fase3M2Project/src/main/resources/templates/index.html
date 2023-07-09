@@ -1,79 +1,98 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <title>Bari Electro Control</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/">
 
-   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/">
-    
     <!-- Bootstrap core CSS -->
-<link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .Logo {
-        position: fixed;
-        top: 10px; 
-        left: 50px; 
-        width: 20%;
-      }
-
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
     <!-- Custom styles for this template -->
-    <link href="../static/headers.css" rel="stylesheet">
-    <link href="../static/signin.css" rel="stylesheet">
     <link href="../static/style.css" rel="stylesheet">
   </head>
+
   <body>
-    
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="left-group">
+        <img src="../images/gear.png" alt="Logo" class="logo-header">
+        <h1 class="textH1">Bari Electro Control</h1>
+      </div>
+
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 link-secondary">Inicio</a></li>
+          <li class="nav-item"><a href="clientes.html" class="nav-link px-2 link-dark">Clientes</a></li>
+          <li class="nav-item"><a href="cotizaciones.html" class="nav-link px-2 link-dark">Cotizaciones</a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link px-2 link-dark">Ingresar</a></li>
+        </ul>
+
+      </nav>
+    </header>
 
     <main>
       <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-          </a>
+        <h1>Bienvenido </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies massa id magna finibus, sed faucibus
+          turpis posuere.</p>
 
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Clientes</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Cotizaciones</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Dashboard</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Inventario</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-          </ul>
-
-          <div class="col-md-3 text-end">
-              <button type="button" class="btn btn-primary">Sign-in</Sign-in></button>
+        <h2>Nuestros Productos</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../images/product1.jpg" class="card-img-top" alt="Producto 1">
+              <div class="card-body">
+                <h5 class="card-title">Producto 1</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Pretium nibh
+                  ipsum consequat nisl vel pretium. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. A cras
+                  semper auctor neque.</p>
+                <a href="#" class="btn btn-primary">Ver detalles</a>
+              </div>
+            </div>
           </div>
-        </header>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../images/product2.jpg" class="card-img-top" alt="Producto 2">
+              <div class="card-body">
+                <h5 class="card-title">Producto 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Pretium nibh
+                  ipsum consequat nisl vel pretium. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. A cras
+                  semper auctor neque.</p>
+                <a href="#" class="btn btn-primary">Ver detalles</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../images/product3.jpg" class="card-img-top" alt="Producto 3">
+              <div class="card-body">
+                <h5 class="card-title">Producto 3</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Pretium nibh
+                  ipsum consequat nisl vel pretium. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. A cras
+                  semper auctor neque.</p>
+                <a href="#" class="btn btn-primary">Ver detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <img src="../images/BEC-.png" class="Logo" alt="...">
     </main>
 
     <footer>
-      <p class="mt-5 mb-3 text-muted">&copy; Equipo 14</p>
-      <img src="../images/Logo.png" class="LOGOIMG" alt="...">
+      <div class="container">
+        <p class="mt-5 mb-3 text-muted">&copy; Equipo 14</p>
+        <img src="../images/Logo.png" class="logo-img" alt="Logo">
+      </div>
     </footer>
 
     <script src="../static/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 
 </html>
+

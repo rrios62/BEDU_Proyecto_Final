@@ -9,86 +9,66 @@
    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/">
     
     <!-- Bootstrap core CSS -->
-<link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
     <!-- Custom styles for this template -->
-    <link href="../static/headers.css" rel="stylesheet">
-    <link href="../static/signin.css" rel="stylesheet">
+    <link href="../static/style.css" rel="stylesheet">
   </head>
   <body>
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="left-group">
+              <img src="../images/gear.png" alt="Logo" class="logo-header">
+              <h1 class="textH1">Bari Electro Control</h1>
+          </div>
+
+          <nav>
+              <ul class="nav">
+                  <li class="nav-item"><a href="index.html" class="nav-link px-2 link-secondary">Inicio</a></li>
+                  <li class="nav-item"><a href="clientes.html" class="nav-link px-2 link-dark">Clientes</a></li>
+                  <li class="nav-item"><a href="cotizaciones.html" class="nav-link px-2 link-dark">Cotizaciones</a></li>
+                  <li class="nav-item"><a href="login.html" class="nav-link px-2 link-dark">Ingresar</a></li>
+              </ul>
+
+          </nav>
+      </header>
     
 
-    <main>
-      <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-          </a>
+      <main>
+          <div class="container">
+              <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" style="max-width: 600px;">
+                  <div class="mb-auto">
+                      <h3 class="float-md-start mb-0">Registro</h3>
+                      <nav class="nav nav-masthead justify-content-center float-md-end">
+                      </nav>
+                  </div>
+                  <h4 class="h3 mb-3 fw-normal"></h4>
 
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Clientes</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Cotizaciones</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Dashboard</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Inventario</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-          </ul>
+                  <div class="form-floating">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                  </div>
 
-          <div class="col-md-3 text-end">
-              <button type="button" class="btn btn-primary">Sign-out</button>
+                  <div class="checkbox mb-3">
+                      <label>
+                        <input type="checkbox" value="remember-me"> Recuerdame
+                      </label>
+                  </div>
+                  <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+
+              </div>
           </div>
-        </header>
-
-
-
-        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" style="max-width: 600px;">
-            <div class="mb-auto">
-              <h3 class="float-md-start mb-0">Registro</h3>
-              <nav class="nav nav-masthead justify-content-center float-md-end">
-              </nav>
-            </div>
-            <h4 class="h3 mb-3 fw-normal"></h4>
-
-            <div class="form-floating">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-              <label for="floatingPassword">Password</label>
-            </div>
-
-            <div class="checkbox mb-3">
-              <label>
-                <input type="checkbox" value="remember-me"> Recuerdame
-              </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      </main>
+      <footer>
+        <div class="container">
+            <p class="mt-5 mb-3 text-muted">&copy; Equipo 14</p>
+            <img src="../images/Logo.png" class="logo-img" alt="Logo">
         </div>
-      </div>
-    </main>
-
-    <footer>
-        <p class="mt-5 mb-3 text-muted">&copy; Equipo 14</p>
-    </footer>
-    <script src="../static/bootstrap.bundle.min.js"></script>
+      </footer>
+      <script src="../static/bootstrap.bundle.min.js"></script>
   </body>
 
 </html>

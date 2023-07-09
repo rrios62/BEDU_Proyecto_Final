@@ -9,11 +9,10 @@
    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/">
     
     <!-- Bootstrap core CSS -->
-    <link href="../static/bootstrap.min.css" rel="stylesheet">
+      <link href="../static/bootstrap.min.css" rel="stylesheet">
 
-        
     <!-- Custom styles for this template -->
-    <link href="../static/style.css" rel="stylesheet">
+      <link href="../static/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
@@ -32,37 +31,25 @@
 
           </nav>
       </header>
-
-
-      <main>
+      <main class="cotizaciones-main">
           <div class="container">
-              <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" style="max-width: 600px;">
-                  <div class="mb-auto">
-                      <h3 class="float-md-start mb-0">Registro</h3>
-                      <nav class="nav nav-masthead justify-content-center float-md-end">
-                      </nav>
-                  </div>
-                  <h4 class="h3 mb-3 fw-normal"></h4>
+              <h2>Cotizaciones</h2>
 
-                  <div class="form-floating">
-                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                      <label for="floatingInput">Email address</label>
+              <form>
+                  <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
                   </div>
-                  <div class="form-floating">
-                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                      <label for="floatingPassword">Password</label>
+                  <div class="mb-3">
+                      <label for="correo" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
                   </div>
-
-                  <div class="checkbox mb-3">
-                      <label>
-                        <input type="checkbox" value="remember-me"> Recuerdame
-                      </label>
+                  <div class="mb-3">
+                      <label for="mensaje" class="form-label">Mensaje</label>
+                      <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingrese su mensaje"></textarea>
                   </div>
-                  <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
-                  <a href="signin.html">
-                      <p>No tengo cuenta</p>
-                  </a>
-              </div>
+                  <button type="submit" class="btn btn-primary">Enviar cotización</button>
+              </form>
           </div>
       </main>
 
@@ -72,7 +59,7 @@
               <img src="../images/Logo.png" class="logo-img" alt="Logo">
           </div>
       </footer>
-      <script src="../static/bootstrap.bundle.min.js"></script>
-  </body>
 
+      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
