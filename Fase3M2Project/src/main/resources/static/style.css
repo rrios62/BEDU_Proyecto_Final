@@ -72,6 +72,7 @@ footer .logo-img {
     height: auto; /* Altura automática del logotipo en el footer */
 }
 /*pedidos*/
+
 /* Estilos específicos para la página de cotizaciones */
 
 .cotizaciones-main {
@@ -91,10 +92,118 @@ form {
 }
 
 .form-control {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .btn-primary {
     display: block;
     width: 100%;
 }
+
+/*Log in*/
+.banner{
+    padding-top: 1.2rem;
+    text-align: center;
+}
+
+/* Estilos para la sección main de verificación de pedidos */
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+}
+
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group-text {
+    width: 200px;
+}
+
+.form-control {
+    width: calc(100% - 200px);
+}
+
+.nav-masthead {
+    margin-top: 1rem;
+}
+
+.float-md-start {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.float-md-end {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.col {
+    margin-bottom: 1.5rem;
+}
+
+.text-end {
+    text-align: right;
+}
+
+/*Cliente*/
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-group-text {
+    background-color: #f8f8f8;
+    width: 100px;
+}
+
+.label-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label-group label {
+    margin-right: 10px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn-primary {
+    border-radius: 0;
+}
+
+
