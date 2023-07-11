@@ -6,124 +6,156 @@
     <meta name="description" content="">
     <title>Bari Electro Control</title>
 
-   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/">
-    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/">
+
     <!-- Bootstrap core CSS -->
-        <link href="../static/bootstrap.min.css" rel="stylesheet">
-        <link href="../static/headers.css" rel="stylesheet">
-        <link href="../static/signin.css" rel="stylesheet">
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
     <!-- Custom styles for this template -->
-    <link href="../static/headers.css" rel="stylesheet">
+    <link href="../static/style.css" rel="stylesheet">
   </head>
   <body>
-    
-
-<main>
-  <div class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-      </a>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Clientes</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Cotizaciones</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Dashboard</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Inventario</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-      </ul>
-
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-primary">Sign-out</button>
+      <div class="left-group">
+        <img src="../images/gear.png" alt="Logo" class="logo-header">
+        <h1 class="textH1">Bari Electro Control</h1>
       </div>
+
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 link-dark">Inicio</a></li>
+          <li class="nav-item"><a href="clientes.html" class="nav-link px-2 link-dark">Clientes</a></li>
+          <li class="nav-item"><a href="pedidos.html" class="nav-link px-2 link-dark">Pedidos</a></li>
+          <li class="nav-item"><a href="cotizaciones.html" class="nav-link px-2 link-dark">Cotizaciones</a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link px-2 link-dark">Ingresar</a></li>
+        </ul>
+      </nav>
+
     </header>
-  
-    <div class="container">
-      <div class="row">
-        <div class="col">
-            <div class="input-group" style="max-width: 600px;">
-              <span class="input-group-text">Nombre y Apellido</span>
-                <input type="text" aria-label="Nombre" class="form-control">
-                <input type="text" aria-label="Apellido" class="form-control">
+
+    <main>
+      <div class="container">
+        <div class="container2">
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+              </div>
             </div>
-            
-            <div class="input-group" style="max-width: 600px;">
-              <span class="input-group-text">Cliente</span>
-                <input type="text" aria-label="Nombre" class="form-control">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+              </div>
             </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="cliente" class="form-label">No. Cliente</label>
+                <input type="text" class="form-control" id="cliente" placeholder="Ingrese el nombre del cliente">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <h4>Motor</h4>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="motor" id="motorAC" checked>
+                  <label class="form-check-label" for="motorAC">Motor AC</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="motor" id="motorDC">
+                  <label class="form-check-label" for="motorDC">Motor DC</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="motor" id="motorNuevo">
+                  <label class="form-check-label" for="motorNuevo">Motor Nuevo</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="motor" id="motorreductor">
+                  <label class="form-check-label" for="motorreductor">Motorreductor</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <h4>Modelo</h4>
+                <select class="form-select" aria-label="Modelo">
+                  <option selected>Seleccionar modelo</option>
+                  <option value="Ford">Ford</option>
+                  <option value="Chevrolet">Chevrolet</option>
+                  <option value="Nissan">Nissan</option>
+                  <option value="Toyota">Toyota</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <h4></h4>
+                <button type="button" class="btn btn-primary">Buscar</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <div class="mb-auto">
-            <h4 class="float-md-start mb-0">Motor</h4>
-            <nav class="nav nav-masthead justify-content-center float-md-end"> </nav>
-         </div>
-       
-       
-         <div class="form-check">
-           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-           <label class="form-check-label" for="flexRadioDefault1">
-            Motor AC
-           </label>
-         </div>
-         <div class="form-check">
-           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-           <label class="form-check-label" for="flexRadioDefault2">
-            Motor DC
-           </label>
-         </div>
-        <div class="form-check">
-           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-           <label class="form-check-label" for="flexRadioDefault3">
-             Motor Nuevo
-           </label>
-         </div>
-         <div class="form-check">
-           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-           <label class="form-check-label" for="flexRadioDefault4">
-            Motorreductor
-           </label>
-         </div>
-        </div>
-        <div class="col">
-          Column
+
+        <div class="mt-4">
+          <table class="table">
+            <thead>
+            <tr>
+              <th scope="col">Referencia</th>
+              <th scope="col">Modelo</th>
+              <th scope="col">Motor</th>
+              <th scope="col">Disponibilidad</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Lorem Ipsum 1</td>
+              <td>Ford</td>
+              <td>Motor AC</td>
+              <td>Disponible</td>
+            </tr>
+            <tr>
+              <td>Lorem Ipsum 2</td>
+              <td>Chevrolet</td>
+              <td>Motor Nuevo</td>
+              <td>No disponible</td>
+            </tr>
+            <tr>
+              <td>Lorem Ipsum 3</td>
+              <td>Nissan</td>
+              <td>Motor DC</td>
+              <td>Disponible</td>
+            </tr>
+            <tr>
+              <td>Lorem Ipsum 4</td>
+              <td>Toyota</td>
+              <td>Motorreductor</td>
+              <td>Disponible</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </div>
+    </main>
 
 
 
 
 
 
- 
-
-</main>
-
-<footer>
-  <p class="mt-5 mb-3 text-muted">&copy; Equipo 14</p>
-</footer>
+    <footer>
+      <div class="container">
+        <p class="mt-5 mb-3 text-muted">&copy; Equipo 14</p>
+        <img src="../images/Logo.png" class="logo-img" alt="Logo">
+      </div>
+    </footer>
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
   </body>
 </html>
