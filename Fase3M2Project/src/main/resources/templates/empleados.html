@@ -40,6 +40,7 @@
     <link href="../static/headers.css" rel="stylesheet">
     <link href="../static/signin.css" rel="stylesheet">
     <link href="../static/style.css" rel="stylesheet">
+
   </head>
   <body>
     
@@ -64,33 +65,34 @@
           <button type="button" class="btn btn-primary">Sign-out</button>
       </div>
     </header>
+
     <img src="../images/BEC-.png" class="Logo" alt="...">
-    <h1>Agregar cliente:</h1>
 
+    <h1>Agregar empleado:</h1>
 
     <div class="input-group mb-3">
-      <span class="input-group-text" id="basic-addon1">Cliente</span>
-      <input type="text" class="form-control" placeholder="Cliente" aria-label="Cliente" aria-describedby="basic-addon1">
+      <span class="input-group-text" id="basic-addon1">Nombre</span>
+      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
     </div>
     
     <div class="input-group mb-3">
-      <span class="input-group-text" id="basic-addon3">Contacto</span>
-      <input type="text" class="form-control" placeholder="Contacto" aria-label=Contacto" aria-describedby="basic-addon2">
+      <span class="input-group-text" id="basic-addon2">Cargo</span>
+      <input type="text" class="form-control" placeholder="Cargo" aria-label=Cargo" aria-describedby="basic-addon2">
     </div>
     
     <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Correo Contacto" aria-label="Correo Contacto" aria-describedby="basic-addon3">
-      <span class="input-group-text" id="basic-addon4">nombre@example.com</span>
-    </div>
-
-    <div class="input-group mb-3">
-      <span class="input-group-text" id="basic-addon5">Teléfono</span>
+      <span class="input-group-text" id="basic-addon3">Teléfono</span>
       <input type="text" class="form-control" placeholder="Teléfono" aria-label="Teléfono" aria-describedby="basic-addon3">
     </div>
 
     <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon6">Dirección</span>
-        <input type="text" class="form-control" placeholder="Dirección" aria-label="Dirección" aria-describedby="basic-addon3">
+        <span class="input-group-text" id="basic-addon4">Actividad</span>
+        <input type="text" class="form-control" placeholder="Actividad" aria-label="Actividad" aria-describedby="basic-addon3">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon5">Número de empleado</span>
+      <input type="text" class="form-control" placeholder="Número de empleado" aria-label="Número de empleado" aria-describedby="basic-addon3">
     </div>
     <button class="w-100 btn btn-lg btn-primary" type="submit">Guardar</button>
 
@@ -101,11 +103,11 @@
       <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Cliente</th>
-        <th scope="col">Contacto</th>
-        <th scope="col">Correo</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Cargo</th>
         <th scope="col">Teléfono</th>
-        <th scope="col">Dirección</th>
+        <th scope="col">Actividad</th>
+        <th scope="col">Número de empleado</th>
       </tr>
       </thead>
       <tbody>
@@ -138,25 +140,8 @@
       </tbody>
     </table>
 
-      <div class="row" th:each="registro : ${listaPersonas}">
-        <div class="cell">
-          <p th:text="${ registro.getNombre() }"></p>
-          <div class="cell">
-            <a th:href="@{/deletePersona(Id=${registro.id})}" class="btn btn-danger ml-2">Delete</a>
-          </div>
-        </div>
-        <div class="cell">
-          <p th:text="${ registro.getTelefono()}"></p>
-        </div>
-        <div class="cell">
-          <p th:text="${ registro.getTelefono()}"></p>
-        </div>
-        <div class="cell">
-          <p th:text="${ registro.getTelefono()}"></p>
-        </div>
-      </div>
     </div>
-    </div>
+
 
   </section>
 
